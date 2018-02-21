@@ -188,12 +188,14 @@ void Player_one() {
         }
         if(IROne_empty == "Yes") {
                 //Red indicate that the Special Weapon is not loaded
+                noStroke();
                 fill(0,112,184);
                 ellipse(97,560,frameCount%50,frameCount%50);
                 textFont(life_title);
                 text("Special Weapon", 132, 567);
         }
         if(IROne_charged == "Yes") {
+                noStroke();
                 fill(#0F34FA);
                 ellipse(100,560,frameCount%50,frameCount%50);
                 textFont(life_title);
@@ -201,6 +203,7 @@ void Player_one() {
         }
         if(IROne_shotted == "Yes") {
                 IROne_shotted = "No";
+                noStroke();
                 fill(#12FA0F);
                 rect(100,560,100,50);
                 textFont(life_title);
