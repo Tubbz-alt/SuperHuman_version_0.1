@@ -21,6 +21,13 @@ The dynamic of the game is almost the same as in paintball.
 - Each shoot of laser and IR count has 1
 - When the life counter is 0 **_Game Over_**.
 - When the shoot counter is 30 **_Game Over_**.
+- The team with more hits against the other team is the winner
+
+### Time
+
+***The game will be of 10 minutes peer round***
+
+> If the time is over and the teams have active players the winner team will be the one with more more hits against the other team
 
 ### Weapons Impacts
 
@@ -36,11 +43,7 @@ Weapon | Shoot
 Laser  |   1
   IR   |   1
 
-#### NOTE you must charge the muscle power to shoot the Special weapon
-
-### Time
-
-10 minutes or enemy team down.
+> NOTE you must charge the muscle power to shoot the Special Weapon
 
 ## System Overview
 
