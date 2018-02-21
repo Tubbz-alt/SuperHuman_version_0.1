@@ -19,15 +19,15 @@ The dynamic of the game is almost the same as in paintball.
 - If you received one impact by laser it will count as -1 point
 - If you received one impact by super weapon it will count as -5 points
 - Each shoot of laser and IR count has 1
-- When the life counter is 0 **_Game Over_**.
-- When the shoot counter is 30 **_Game Over_**.
+- When the when the life counter reaches 0 **_Game Over_**.
+- When the shoot counter reach 30 shoots **_Game Over_**.
 - The team with more hits against the other team is the winner
 
 ### Time
 
 ***The game will be of 10 minutes peer round***
 
-> If the time is over and the teams have active players the winner team will be the one with more more hits against the other team
+> If the time is over and the teams have active players, the winner team will be the one with more more hits against the other team
 
 ### Weapons Impacts
 
