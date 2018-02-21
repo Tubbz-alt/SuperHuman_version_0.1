@@ -169,6 +169,7 @@ void Player_one() {
         }
         if((life_PO <= 5) && (life_PO > 0)) {
                 //If the user end the game change the color to yellow
+                noStroke();
                 fill(255,247,77);
                 ellipse(195,120,frameCount%50,frameCount%50);
                 background_death = color(255,247,77);
@@ -178,6 +179,7 @@ void Player_one() {
         }
         if (life_PO <= 0) {
                 //If the user end the game change the color to red
+                noStroke();
                 fill(255,35,1);
                 ellipse(195, 120,frameCount%20,frameCount%20);
                 background_death = color(255,35,1);
