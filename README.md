@@ -44,19 +44,19 @@ Laser  |   1
 
 ## System Overview
 
-![Overview](assets/overview1.png)
+<img src="assets/overview1.png" width="600">
 
 ### Transmitter
 
-![Transmitter](assets/overview3.png)
+<img src="assets/overview3.png" width="600">
 
 ### Force-feedback
 
-![Force-feedback](assets/overview2.png)
+<img src="assets/overview2.png" width="550">
 
 ### Special weapon
 
-![Special weapon](assets/overview4.png)
+<img src="assets/overview4.png" width="700">
 
 ## Contributing
 
@@ -66,7 +66,7 @@ Please read [CONTRIBUTING.md](https://github.com/totovr/Processing/blob/master/C
 
 I use [SemVer](http://semver.org/) for versioning.
 
-## Author
+## Authors
 
 Antonio Vega Ramirez:
 
