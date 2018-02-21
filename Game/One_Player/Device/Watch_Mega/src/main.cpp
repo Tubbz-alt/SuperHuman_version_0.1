@@ -21,9 +21,9 @@ void shoot_life();//format of the life and impacts
 void timer();//format of the clock
 void calculateTime();//Function that calculate the time
 void Game_Over();//Function that is called when the game is over
-//New Added
-void Serial_Reader();
+void Serial_Reader();//Read Serial1
 
+//Oled display settings
 // If using software SPI
 #define OLED_MOSI  11
 #define OLED_CLK   12
@@ -38,9 +38,6 @@ Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 char Serial_Universal_Reader = 0;
 //Point Variable
 int points = 0;
-//Game_Over
-int end = 0;
-
 //Laser shoot
 const int Laser_WeaponIn = 2;//pin for pullup resistor D2
 int ledLaser = 13;//Pin for laser
@@ -55,12 +52,14 @@ int IR_WeaponIn = 7;//here we read the bottom of the gun
 int ledIR_state = 0;//if we push the bottom the gun will be shoot
 int last_ledIR_state = 0;//Save the last state of the bottom
 int special_weapon_active = 0;//Variable to know if the IR was shooted
+//Game_Over
+int end = 0;
 
 void setup() {
         //Master of the Shoulder Bluetooth
         Serial1.begin(38400);
         //Slave of the server
-        Serial2.begin(115200); // Start serial communication at 38400 bps
+        Serial2.begin(115200); // Start serial communication at 115200 bps
         //OLED configuration
         display.begin(SSD1306_SWITCHCAPVCC);
         display.display();
@@ -107,6 +106,9 @@ void TheGame() {
                 delay(1000);
                 display.display();
         }
+        //This will activate the server
+        Serial2.write('O');
+        Serial2.write(0);
 }
 
 void Serial_Reader() {
